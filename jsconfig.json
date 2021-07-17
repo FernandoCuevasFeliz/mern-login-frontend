@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "jsx": "preserve",
+    "target": "es6",
+    "paths": {
+      "@common/*": ["components/common/*"],
+      "@layout/*": ["components/layout/*"],
+      "@hooks/*": ["components/hooks/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

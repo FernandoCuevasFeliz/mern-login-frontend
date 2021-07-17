@@ -1,0 +1,42 @@
+@import 'normalize.css';
+
+:root {
+  --white: #fff;
+  --black: #2f3542;
+  --light-primary: #c8d6e5;
+  --primary: #1e90ff;
+  /* --secondary: #57606f; */
+  --secondary: #34495e;
+  --success: #2ed573;
+  --warning: #eccc68;
+  --danger: #ff4757;
+
+  --navbar-size: 70px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+.container-views {
+  padding-top: var(--navbar-size);
+}
+
+.icon {
+  letter-spacing: 0;
+}
