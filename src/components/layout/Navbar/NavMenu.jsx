@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BtnLink from '@common/BtnLink/BtnLink';
-import { LoginIcon, PersonAddIcon } from 'assets/icons/index';
+import { LoginIcon, PersonAddOutlineIcon } from 'assets/icons/index';
 
 import NavItem from './NavItem';
 import NavDropDownItem from './NavDropDownItem';
@@ -40,7 +40,7 @@ const NavMenu = ({ closeMenu, screen }) => {
             Login
           </BtnLink>
           <BtnLink className="btn-auth" onClick={closeMenu} to="/register">
-            <PersonAddIcon />
+            <PersonAddOutlineIcon />
             Register
           </BtnLink>
         </div>

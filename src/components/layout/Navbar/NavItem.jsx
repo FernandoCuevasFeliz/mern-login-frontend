@@ -15,7 +15,7 @@ const NavItem = ({
 }) => {
   return (
     <li
-      ref={myRef}
+      ref={myRef || null}
       className={'navbar__item ' + className}
       onMouseEnter={onMouseEnter || undefined}
       onMouseLeave={onMouseLeave || undefined}

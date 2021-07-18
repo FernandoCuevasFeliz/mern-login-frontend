@@ -1,7 +1,9 @@
 import React from 'react';
 import shortid from 'shortid';
 
-function Input({ icon, type, placeholder, name, labelText, className }) {
+import './Input.css';
+
+function Input({ icon, type, placeholder, name, textLabel, className }) {
   const id = shortid();
   const inputProps = {
     id,
@@ -13,7 +15,11 @@ function Input({ icon, type, placeholder, name, labelText, className }) {
 
   return (
     <div className="input-container">
-      <label htmlFor={id}>{labelText}</label>
+      {textLabel && (
+        <label className="input__label" htmlFor={id}>
+          {textLabel}
+        </label>
+      )}
       <div className="input">
         {icon && icon}
         <input {...inputProps} />

@@ -1,26 +1,96 @@
-export const MenuIcon = () => (
-  <span className="material-icons-round icon">menu</span>
+export const MenuIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-menu ' + className}
+  ></span>
 );
 
-export const CancelIcon = () => (
-  <span className="material-icons-round icon">close</span>
+export const CancelIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-cancel ' + className}
+  ></span>
 );
 
-export const LoginIcon = () => (
-  <span className="material-icons-round icon">login</span>
+export const LoginIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-login ' + className}
+  ></span>
 );
 
-export const PersonAddIcon = () => (
-  <span className="material-icons-round icon">person_add</span>
+export const PersonAddOutlineIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-user-add-outline ' + className}
+  ></span>
 );
-export const ArrowDropDownIcon = () => (
-  <span className="material-icons-round icon">arrow_drop_down</span>
+export const ArrowDropDownIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-down-dir ' + className}
+  ></span>
 );
 
-export const ArrowDropUpIcon = () => (
-  <span className="material-icons-round icon">arrow_drop_up</span>
+export const ArrowDropUpIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-up-dir ' + className}
+  ></span>
 );
 
-export const PersonOutlineIcon = () => (
-  <span class="material-icons-round icons">person_outline</span>
+export const PersonOutlineIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-user-o ' + className}
+  ></span>
+);
+
+export const MailIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-mail ' + className}
+  ></span>
+);
+
+export const KeyIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-key ' + className}
+  ></span>
+);
+
+export const GoogleIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-google ' + className}
+  ></span>
+);
+
+export const FacebookRectIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-facebook-rect ' + className}
+  ></span>
+);
+
+export const EyeIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-eye ' + className}
+  ></span>
+);
+
+export const EyeOffIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-eye-off ' + className}
+  ></span>
+);
+
+export const UserOutLinefIcon = ({ onClick, className }) => (
+  <span
+    onClick={onClick || undefined}
+    className={'icon icon-user-outline ' + className}
+  ></span>
 );

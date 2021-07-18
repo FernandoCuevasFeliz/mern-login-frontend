@@ -10,8 +10,11 @@
   --success: #2ed573;
   --warning: #eccc68;
   --danger: #ff4757;
-
+  --dark: #2f3640;
   --navbar-size: 70px;
+
+  --desktop: 960px;
+  --tablet: 768px;
 }
 
 *,
@@ -24,6 +27,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  color: var(--dark);
 }
 
 a {
@@ -38,5 +42,47 @@ img {
 }
 
 .icon {
-  letter-spacing: 0;
+  font-size: 1em;
+}
+
+/* *** */
+.btn-password {
+  order: 1;
+  margin-right: 0;
+}
+
+.btn__form {
+  width: 100%;
+
+  padding-left: 0;
+  padding-right: 0;
+  color: var(--white);
+  background-color: var(--black);
+  font-weight: bold;
+  border: 1px solid var(--black);
+}
+
+.link-form {
+  padding: 0;
+  color: var(--primary);
+}
+.form-footer {
+  border: 1px solid var(--dark);
+  border-radius: 0.25em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .btn-password {
+    cursor: pointer;
+  }
+  .control-double {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
 }

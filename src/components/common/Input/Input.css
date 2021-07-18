@@ -1,0 +1,35 @@
+.input-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--secondary);
+  border-radius: 0.25em;
+  padding: 8px;
+}
+
+.input__label {
+  display: block;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input .input__control {
+  border: none;
+  outline: none;
+  width: calc(100% - 35px);
+  color: var(--dark);
+}
+
+.input .icon {
+  padding-right: 5px;
+}
+
+.btn__form {
+  margin-top: 8px;
+}

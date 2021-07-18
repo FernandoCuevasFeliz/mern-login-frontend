@@ -1,19 +1,27 @@
 .login-form {
   padding: 16px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .login-form__title {
   text-align: center;
 }
 
-.login-form .btn__form {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  color: var(--white);
-  background-color: var(--black);
-  font-weight: bold;
-}
 .login-form .btn__form:active {
   filter: brightness(1.2);
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

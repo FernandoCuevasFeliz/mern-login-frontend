@@ -8,20 +8,18 @@ import NavItem from './NavItem';
 const NavDropDownItem = ({ text, icon, children, clickOutSide }) => {
   const [isShow, setIsShow] = useState(false);
   const width = useWidthScreen();
-  const dropMenuRef = useClickOutSide(() => setIsShow(false));
+  const dropMenuRef = useClickOutSide(() => {
+    if (width > DESKTOP && clickOutSide) setIsShow(false);
+  });
 
   const toggleDropDown = () => setIsShow(!isShow);
 
   const handleMouseEnter = () => {
-    if (width >= DESKTOP) {
-      setIsShow(true);
-    }
+    if (width > DESKTOP) setIsShow(true);
   };
 
   const handleMouseLeave = () => {
-    if (width >= DESKTOP) {
-      setIsShow(false);
-    }
+    if (width > DESKTOP) setIsShow(false);
   };
 
   const navItemProp = {
@@ -29,13 +27,11 @@ const NavDropDownItem = ({ text, icon, children, clickOutSide }) => {
     text,
     leftIcon: icon,
     rightIcon: isShow ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />,
-    onClick: !clickOutSide
-      ? width <= DESKTOP && toggleDropDown
-      : toggleDropDown,
+    onClick: !clickOutSide && width <= DESKTOP && toggleDropDown,
     className: 'navbar__dropdown',
     onMouseEnter: !clickOutSide && handleMouseEnter,
     onMouseLeave: !clickOutSide && handleMouseLeave,
-    myRef: clickOutSide ? dropMenuRef : undefined,
+    myRef: clickOutSide && dropMenuRef,
   };
 
   return (
