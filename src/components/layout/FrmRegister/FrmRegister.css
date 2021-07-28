@@ -8,3 +8,7 @@
 .register-form__title {
   text-align: center;
 }
+
+.register-form .btn__form:active {
+  filter: brightness(1.2);
+}

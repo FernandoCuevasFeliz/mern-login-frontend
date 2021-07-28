@@ -68,13 +68,13 @@ const FrmRegister = () => {
         }
         placeholder="Writing your password"
         textLabel="Password:"
-        type={showPassword ? 'password' : 'text'}
+        type={!showPassword ? 'password' : 'text'}
       />
       <Input
         icon={<KeyIcon />}
         placeholder="Writing your password again"
         textLabel="Confirm Password"
-        type={showPassword ? 'password' : 'text'}
+        type={!showPassword ? 'password' : 'text'}
       />
       <Button className="btn__form">Register</Button>
       <p className="form-footer">

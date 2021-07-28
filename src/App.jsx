@@ -1,9 +1,15 @@
+import { AuthProvider } from 'context/Auth/AuthProvider';
+import { GlobalProvider } from 'context/Global/GlobalProvider';
 import IndexRouter from 'routers/IndexRouter';
 
 const App = () => {
   return (
     <div className="container-views">
-      <IndexRouter />
+      <GlobalProvider>
+        <AuthProvider>
+          <IndexRouter />
+        </AuthProvider>
+      </GlobalProvider>
     </div>
   );
 };

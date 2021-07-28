@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "target": "es6",
+    "module": "commonJS",
     "baseUrl": "src",
     "jsx": "preserve",
-    "target": "es6",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "paths": {
       "@common/*": ["components/common/*"],
       "@layout/*": ["components/layout/*"],

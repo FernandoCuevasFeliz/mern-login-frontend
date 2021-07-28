@@ -1,0 +1,8 @@
+.error {
+  border-radius: 0.25em;
+  background-color: var(--danger);
+  color: var(--white);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
