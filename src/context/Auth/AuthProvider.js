@@ -13,7 +13,9 @@ const userState = {
 export const AuthProvider = ({ children }) => {
   const [userAuth, setUserAuth] = useState(userState);
 
-  useEffect(() => {}, [userAuth]);
+  useEffect(() => {
+    
+  }, [userAuth]);
 
   const login = async (username, password) => {
     const res = await AuthService.login(username, password);
